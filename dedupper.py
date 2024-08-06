@@ -334,13 +334,8 @@ def write_html():
 
 
 if __name__ == '__main__':
-	tsvi_root = f'{userprofile}\\OneDrive\\Pictures\\'
-	nohary_root = 'c:\\Users\\nohar\\OneDrive\\Pictures\\'
-	shahar_root = f'{userprofile}\\OneDrive\\Pictures Family\\'
 	
-	sys.argv = '--delete'
-	
-	root = shahar_root
+	root = '.'
 	
 	if '--delete' in sys.argv:
 		if os.path.exists('duplicates.json'):
